@@ -1,0 +1,758 @@
+@import url(../style/fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --JB700: 'Jost-bold-700';
+    --JSB600: 'Jost-SamiBold-600';
+    --JR400: 'Jost-Regular-400';
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* header start */
+
+.header {
+    background: #141024;
+}
+
+.header__nav {
+    padding-top: 30px;
+}
+
+.header__nav-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-title {
+    font-family: var(--JB700);
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__nav-link {
+    font-family: var(--JR400);
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.header__nav-num {
+    font-family: var(--JSB600);
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.header__nav-burgers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    display: none;
+}
+
+.header__nav-phone {
+    padding: 10px;
+    border: 1px solid #ffffff23;
+    border-radius: 3px;
+}
+
+.header__nav-burger {
+    padding: 15px 10px;
+    border: 1px solid #ffffff23;
+    border-radius: 3px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content-title {
+    font-family: var(--JSB600);
+    font-size: 70px;
+    line-height: 112px;
+    color: #FFFFFF;
+}
+
+.header__content-text {
+    max-width: 478px;
+    width: 100%;
+    font-family: var(--JR400);
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 20px 0 50px 0;
+}
+
+.header__content-btn {
+    padding: 25px 55px;
+    background: #D52027;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--JR400);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.header__content-button {
+    display: none;
+}
+
+.header__content-img {
+    max-width: 583px;
+    width: 100%;
+}
+
+/* header end */
+/* ************* */
+
+/* main start */
+
+.main {
+    padding: 120px 0;
+}
+
+.main__school-text {
+    font-family: var(--JSB600);
+    font-size: 30px;
+    line-height: 48px;
+    color: #141024;
+    max-width: 890px;
+}
+
+.main__school-text span {
+    font-family: var(--JR400);
+    font-size: 30px;
+    line-height: 48px;
+    color: #141024;
+}
+
+.main__school-categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.main__categories-title {
+    font-family: var(--JSB600);
+    font-size: 70px;
+    line-height: 112px;
+    color: #D52027;
+}
+
+.main__categories-text {
+    font-family: var(--JR400);
+    font-size: 18px;
+    line-height: 28px;
+    color: #141024B2;
+    max-width: 260px;
+    width: 100%;
+}
+
+.main__info {
+    padding: 100px 0;
+    background: #F9F9F9;
+}
+
+.main_-info-title {
+    font-family: var(--JSB600);
+    font-size: 50px;
+    line-height: 80px;
+    color: #141024;
+    margin-bottom: 60px;
+}
+
+.main__info-texts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__info-secondTitle {
+    font-family: var(--JSB600);
+    font-size: 24px;
+    line-height: 38px;
+    color: #141024;
+    margin-bottom: 20px;
+}
+
+.main__info-text {
+    font-family: var(--JR400);
+    font-size: 18px;
+    line-height: 28px;
+    color: #141024B2;
+    max-width: 360px;
+    width: 100%;
+}
+
+.main__teachers {
+    padding: 100px 0;
+}
+
+.main__teachers-title {
+    font-family: var(--JSB600);
+    font-size: 50px;
+    line-height: 80px;
+    color: #141024;
+    margin-bottom: 60px;
+}
+
+.main__teachers-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__teachers-name {
+    font-family: var(--JSB600);
+    font-size: 24px;
+    line-height: 38px;
+    color: #141024;
+    margin: 20px 0 10px 0;
+}
+
+.main__teachers-text {
+    font-family: var(--JR400);
+    font-size: 18px;
+    line-height: 28px;
+    color: #141024;
+    margin-bottom: 20px;
+}
+
+.main__teachers-link {
+    font-family: var(--JR400);
+    font-size: 18px;
+    line-height: 28px;
+    color: #D52027;
+}
+
+.main__teachers-range {
+    width: 360px;
+}
+
+.main__teachers-end {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.main__teachers-circle {
+    display: flex;
+    gap: 10px;
+}
+
+.main__package {
+    padding-bottom: 100px;
+}
+
+.main__package-title {
+    font-family: var(--JSB600);
+    font-size: 50px;
+    line-height: 80px;
+    color: #141024;
+    margin-bottom: 60px;
+}
+
+
+.main__package-prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__package-price {
+    border: 1px solid #14102433;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    transition: .3s;
+}
+
+.main__package-price:hover {
+    transform: scale(1.1);
+    background: #141024;
+    color: white;
+}
+
+.main__package-price:hover .main__package-priceTitle {
+    color: #ffffff;
+} 
+
+.main__package-price:hover .main__package-textPrice {
+    color: #ffffff;
+}
+
+.main__package-price:hover .main__package-fristText {
+    color: #ffffff;
+}
+
+.main__package-price:hover .main__package-text {
+    color: #ffffff;
+}
+
+.main__package-priceTitle {
+    font-family: var(--JSB600);
+    font-size: 30px;
+    line-height: 48px;
+    color: #141024;
+}
+
+
+.main__package-textPrice {
+    font-family: var(--JSB600);
+    font-size: 50px;
+    line-height: 80px;
+    color: #141024;
+    padding: 60px 0 20px 0;
+}
+
+
+.main__package-fristText {
+    font-family: var(--JR400);
+    font-size: 18px;
+    line-height: 28px;
+    color: #141024;
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 33px;
+}
+
+
+
+.main__package-text {
+    font-family: var(--JR400);
+    font-size: 18px;
+    line-height: 28px;
+    color: #141024;
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.main__package-btn {
+    padding: 25px 78px;
+    font-family: var(--JR400);
+    line-height: 28px;
+    color: #ffffff;
+    background: #D52027;
+    border-radius: 5px;
+    border: none;
+}
+
+/* main end */
+/* **************** */
+
+/* footer start */
+
+
+.footer__content {
+    background: #D52027;
+    position: relative;
+    z-index: -1;
+}
+
+.footer__content-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 87px 0;
+}
+
+.footer-content-title {
+    font-family: var(--JSB600);
+    font-size: 36px;
+    line-height: 46px;
+    color: #FFFFFF;
+    max-width: 476px;
+}
+
+.footer__content-text {
+    font-family: var(--JR400);
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.footer__content-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__content-inp {
+    padding: 20px 180px 20px 20px;
+    border-radius: 5px;
+    background: #F6F6F6;
+    border: none;
+}
+
+::placeholder {
+    font-family: var(--JR400);
+    font-size: 18px;
+    line-height: 26px;
+    color: #282944B2;
+}
+
+.footer__content-btn {
+    padding: 20px;
+    max-width: 370px;
+    width: 100%;
+    background: #141024;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.footer__content-rightImg {
+    position: absolute;
+    top: 76%;
+    left: 0;
+    z-index: -1;
+}
+.footer__content-leftImg {
+    position: absolute;
+    top: 76%;
+    left: 74%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.footer__end {
+    background: #141024;
+    padding: 40px 0 70px 0;
+}
+
+.footer__end-end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__end-title {
+    font-family: var(--JB700);
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.footer__end-text {
+    font-family: var(--JSB600);
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.footer__end-num {
+    font-family: var(--JSB600);
+    font-size: 30px;
+    line-height: 48px;
+    color: #ffffff;
+}
+
+/* footer end */
+/* ************* */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 786px;
+    }
+
+    .header__nav-list {
+        display: none;
+    }
+
+    .header__nav-num {
+        display: none;
+    }
+
+    .header__nav-burgers {
+        display: block;
+        display: flex;
+    }
+
+    .header__content {
+        flex-direction: column;
+    }
+
+    .header__content-title {
+        text-align: center;
+    }
+
+    .header__content-text {
+        text-align: center;
+        font-size: 33px;
+        max-width: 500px;
+    }
+
+    .header__content-btn {
+        display: none;
+    }
+
+    .header__content-button {
+        display: block;
+    }
+
+    .main__categories-categories {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main__categories-text {
+        max-width: 330px;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .main__school-categories {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .main__info-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .main_-info-title {
+        max-width: 400px;
+        line-height: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__info-texts {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .main__info-secondTitle {
+        font-size: 28px;
+    }
+
+    .main__info-text {
+        max-width: 390px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .main__teachers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__teachers-title {
+        text-align: center;
+        max-width: 360px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .main__teachers-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .main__teachers-circle {
+        display: none;
+    }
+
+    .main__package {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__package-title {
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .main__package-prices {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    .footer__content-info {
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+    .footer__content-discount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__content-rightImg {
+        display: none;
+    }
+
+    .footer__content-leftImg {
+        display: none;
+    }
+
+    .footer__content-text {
+        max-width: 250px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__end-end {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__end-text {
+        font-size: 17px;
+        line-height: 22px;
+        font-family: var(--JR400);
+    }
+
+}
+
+@media (max-width: 767px) {
+        .container {
+            max-width: 576px;
+        }
+
+        .header__nav-title {
+            font-size: 30px;
+            line-height: 48px;
+        }
+
+        .header__content-title {
+            font-size: 30px;
+            line-height: 48px;
+        }
+
+        .header__content-text {
+            max-width: 300px ;
+            width: 100%;
+            font-family: var(--JR400);
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .main__school-text {
+            max-width: 300px;
+            width: 100%;
+            font-family: var(--JSB600);
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .main__school-text span {
+            font-family: var(--JR400);
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .main__categories-text {
+            max-width: 300px;
+            width: 100%;
+            font-family: var(--JR400);
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .main_-info-title {
+            max-width: 300px;
+            font-size: 30px;
+            line-height: 42px;
+            font-family: var(--JSB600);
+        }
+
+        .main__texts-texts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main__info-secondTitle {
+            font-family: var(--JSB600);
+            font-size: 20px;
+            line-height: 32px;
+            max-width: 142px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .main__info-text {
+            max-width: 300px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        .main__teachers-title {
+            font-size: 30px;
+            line-height: 42px;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .main__package-title {
+            font-size: 50px;
+            line-height: 62px;
+            max-width: 400px;
+            width: 100%
+        }
+
+        .footer__end-text {
+            margin: 20px 0;
+        }
+}
