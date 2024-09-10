@@ -25,12 +25,6 @@ html {
     padding: 0 15px;
 }
 
-.container-fluid {
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 body {
     overflow-x: hidden;
@@ -43,7 +37,7 @@ body {
 }
 
 .header__nav {
-    padding-top: 30px;
+    padding: 30px 100px 0 100px;
 }
 
 .header__nav-nav {
@@ -80,22 +74,24 @@ body {
 
 .header__nav-burgers {
     display: flex;
-    align-items: center;
     gap: 10px;
+    align-items: center;
     display: none;
 }
 
 .header__nav-phone {
-    padding: 10px;
-    border: 1px solid #ffffff23;
-    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    border: none;
 }
 
 .header__nav-burger {
-    padding: 15px 10px;
-    border: 1px solid #ffffff23;
-    border-radius: 3px;
+    width: 50px;
+    height: 50px;
 }
+
+
+
 
 .header__content {
     display: flex;
@@ -131,6 +127,21 @@ body {
     line-height: 28px;
 }
 
+.header__content-btn1 {
+    padding: 25px 55px;
+    background: #D52027;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--JR400);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.header__content-button {
+    display: none;
+}
+
 .header__content-button {
     display: none;
 }
@@ -149,8 +160,17 @@ body {
     padding: 120px 0;
 }
 
-.main__school-text {
+.main__scool-title {
     font-family: var(--JSB600);
+    font-size: 30px;
+    display: inline;
+    color: #141024;
+
+
+}
+
+.main__school-text {
+    font-family: var(--JSB400);
     font-size: 30px;
     line-height: 48px;
     color: #141024;
@@ -300,6 +320,7 @@ body {
     padding: 40px;
     text-align: center;
     transition: .3s;
+    cursor: pointer;
 }
 
 .main__package-price:hover {
@@ -310,7 +331,7 @@ body {
 
 .main__package-price:hover .main__package-priceTitle {
     color: #ffffff;
-} 
+}
 
 .main__package-price:hover .main__package-textPrice {
     color: #ffffff;
@@ -323,6 +344,7 @@ body {
 .main__package-price:hover .main__package-text {
     color: #ffffff;
 }
+
 
 .main__package-priceTitle {
     font-family: var(--JSB600);
@@ -371,6 +393,7 @@ body {
     background: #D52027;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 /* main end */
@@ -387,7 +410,7 @@ body {
 
 .footer__content-info {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 87px 0;
 }
@@ -441,11 +464,13 @@ body {
 }
 
 .footer__content-rightImg {
+    width: 100%;
     position: absolute;
     top: 76%;
     left: 0;
     z-index: -1;
 }
+
 .footer__content-leftImg {
     position: absolute;
     top: 76%;
@@ -456,7 +481,7 @@ body {
 
 .footer__end {
     background: #141024;
-    padding: 40px 0 70px 0;
+    padding: 40px 100px 70px 100px;
 }
 
 .footer__end-end {
@@ -478,6 +503,12 @@ body {
     color: #ffffff;
 }
 
+.footer__end-text1{
+    font-family: var(--JSB600);
+    line-height: 25px;
+    color: #ffffff;
+}
+
 .footer__end-num {
     font-family: var(--JSB600);
     font-size: 30px;
@@ -488,15 +519,12 @@ body {
 /* footer end */
 /* ************* */
 
-@media (max-width: 1200px) {
+/* meadi start */
+/* ******************************* */
+
+@media(max-width: 1200px) {
     .container {
         max-width: 992px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        max-width: 786px;
     }
 
     .header__nav-list {
@@ -512,18 +540,169 @@ body {
         display: flex;
     }
 
-    .header__content {
+    .header__content-img {
+        width: 400px;
+
+    }
+
+
+
+    .main__school-categories {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .main__info-texts {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+
+    }
+
+    .main__info-text {
+
+        font-size: 22px;
+    }
+
+    .main__info-secondTitle {
+        font-size: 30px;
+    }
+
+    .main__teachers-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .main__teachers-range {
+        display: none;
+    }
+
+    .main__teachers-end {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .main__package-title {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .main__package-prices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .footer__content-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+
+    }
+
+    .footer-content-title {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .footer__content-text {
+        font-size: 24px;
+    }
+
+    .footer__content-rightImg {
+        display: none;
+    }
+
+
+}
+
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
     }
 
     .header__content-title {
+        font-size: 30px;
         text-align: center;
     }
 
-    .header__content-text {
+    .header__content-info {
+
+
         text-align: center;
-        font-size: 33px;
-        max-width: 500px;
+    }
+
+
+
+
+
+}
+
+@media(max-width:768px) {
+    .container {
+        max-width: 576px;
+
+    }
+
+    .header__content-btn {
+        padding: 15px 40px;
+    }
+
+    .main_-info-title {
+        font-size: 40px;
+    }
+
+    .main__teachers-title {
+        font-size: 40px;
+    }
+
+    .footer__end-end {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media(max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    .header__nav {
+        padding: 30px 10px 0 10px;
+    }
+
+    .header__content-title {
+        font-size: 35px;
     }
 
     .header__content-btn {
@@ -532,227 +711,163 @@ body {
 
     .header__content-button {
         display: block;
+        position: relative;
+        top: -40px;
     }
 
-    .main__categories-categories {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+    .header__content-btn1 {
+        padding: 17px 82px;
+        font-size: 14px;
+
     }
 
-    .main__categories-text {
-        max-width: 330px;
+
+
+}
+
+@media(max-width:320px) {
+    .container {
         width: 100%;
-        font-size: 22px;
+
     }
 
-    .main__school-categories {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
+    .header__nav-title {
+        font-size: 18px;
     }
 
-    .main__info-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .header__content-title {
+        font-size: 30px;
+
+    }
+
+    .header__content-text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .main__teachers-img {
+        width: 220px;
+        height: 306px;
+    }
+
+    .main__school-text {
+        font-size: 20px;
+        font-family: var(--JB400);
+
+    }
+
+
+
+
+    .main__school-text1 {
+        line-height: 22px;
+        font-size: 20px;
+        font-family: var(--JR400);
 
     }
 
     .main_-info-title {
-        max-width: 400px;
-        line-height: 50px;
-        width: 100%;
+        font-size: 30px;
+        line-height: 42px;
         text-align: center;
-    }
-
-    .main__info-texts {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 50px;
     }
 
     .main__info-secondTitle {
-        font-size: 28px;
+        font-size: 25px;
+
     }
 
     .main__info-text {
-        max-width: 390px;
-        width: 100%;
-        font-size: 20px;
-    }
-
-    .main__teachers {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        font-size: 16px;
+        line-height: 25px;
     }
 
     .main__teachers-title {
+        font-size: 30px;
         text-align: center;
-        max-width: 360px;
-        font-size: 40px;
-        line-height: 50px;
+        line-height: 42px;
     }
 
-    .main__teachers-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
+    .main__teachers-img {
 
-    .main__teachers-circle {
-        display: none;
-    }
-
-    .main__package {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main__package-title {
-        text-align: center;
-        max-width: 400px;
-    }
-
-    .main__package-prices {
-        flex-direction: column;
-        gap: 50px;
-    }
+        width: 220px;
+        height: 306px;
 
 
-    .footer__content-info {
-        flex-direction: column;
-        gap: 50px;
 
     }
 
-    .footer__content-discount {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .main__teachers-name{
+        font-family: var(--JSB600);
+        font-size: 20px;
+
     }
 
-    .footer__content-rightImg {
-        display: none;
-    }
-
-    .footer__content-leftImg {
-        display: none;
-    }
-
-    .footer__content-text {
-        max-width: 250px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer__end-end {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer__end-text {
-        font-size: 17px;
-        line-height: 22px;
+    .main__teachers-text{
         font-family: var(--JR400);
+        font-size: 14px;
+
     }
 
+    .main__teachers-link{
+        font-family: var(--JR400);
+        font-size: 16px;
+    }
+
+    .main__teachers-end{
+        display: none;
+    }
+
+    .main__package-title{
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .main__package-btn{
+        padding: 17px 54px;
+        font-size: 14px;
+
+    }
+
+    .footer-content-title{
+       font-size: 30px;
+       line-height: 42px;
+       text-align: center;
+    }
+
+    .footer__content-text{
+        font-size: 20px;
+       line-height: 25px;
+       text-align: center;
+    }
+
+    .footer__content-inp{
+width: 300px;
+    }
+
+    .footer__end-num{
+        text-align: center;
+        font-size: 16px;
+        
+    }
+
+    .footer__end{
+       padding: 40px 80px 70px 80px;
+    }
+
+   .footer__end-text{
+    display: none;
+
+   }
+
+   .footer__end-text1{
+    display: block;
+    font-size: 14px;
+    
+   }
+
 }
 
-@media (max-width: 767px) {
-        .container {
-            max-width: 576px;
-        }
 
-        .header__nav-title {
-            font-size: 30px;
-            line-height: 48px;
-        }
-
-        .header__content-title {
-            font-size: 30px;
-            line-height: 48px;
-        }
-
-        .header__content-text {
-            max-width: 300px ;
-            width: 100%;
-            font-family: var(--JR400);
-            font-size: 18px;
-            line-height: 25px;
-        }
-
-        .main__school-text {
-            max-width: 300px;
-            width: 100%;
-            font-family: var(--JSB600);
-            font-size: 20px;
-            line-height: 32px;
-        }
-
-        .main__school-text span {
-            font-family: var(--JR400);
-            font-size: 20px;
-            line-height: 32px;
-        }
-
-        .main__categories-text {
-            max-width: 300px;
-            width: 100%;
-            font-family: var(--JR400);
-            font-size: 18px;
-            line-height: 25px;
-        }
-
-        .main_-info-title {
-            max-width: 300px;
-            font-size: 30px;
-            line-height: 42px;
-            font-family: var(--JSB600);
-        }
-
-        .main__texts-texts {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .main__info-secondTitle {
-            font-family: var(--JSB600);
-            font-size: 20px;
-            line-height: 32px;
-            max-width: 142px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .main__info-text {
-            max-width: 300px;
-            width: 100%;
-            font-size: 16px;
-            line-height: 25px;
-        }
-
-        .main__teachers-title {
-            font-size: 30px;
-            line-height: 42px;
-            max-width: 300px;
-            width: 100%;
-        }
-
-        .main__package-title {
-            font-size: 50px;
-            line-height: 62px;
-            max-width: 400px;
-            width: 100%
-        }
-
-        .footer__end-text {
-            margin: 20px 0;
-        }
-}
+/* meadi end */
+/* ******************************* */
